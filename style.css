@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #090a0a, #ACB6E5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 80px 100px; /* Bigger padding */
+    width: 100%;
+    max-width: 1700px; /* Almost full screen */
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(223, 175, 222, 0.3);
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+    font-size: 100px; /* Very big heading */
+  }
+  
+  .quote-box {
+    background-color: #e5f082;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    min-height: 600px; /* Tall box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #quote {
+    font-size: 70px; /* Very big quote */
+    padding: 0 40px;
+  }
+  
+  button {
+    padding: 40px 40px;
+    font-size: 80px; /* Big button */
+    background-color: #7498eb;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e7a665;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(146, 154, 87, 0.3);
+  }
+  
+  .fade {
+    animation: fadeEffect 0.7s;
+  }
+  
+  @keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Responsive adjustment for slightly smaller screens */
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 70px;
+    }
+    #quote {
+      font-size: 50px;
+    }
+    button {
+      font-size: 36px;
+    }
+  }
+  
